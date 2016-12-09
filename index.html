@@ -17,14 +17,24 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <!-- Fade-in effect -->
+    <script>
+    document.body.style.transition = "opacity ease 0.4s";
+    document.body.style.opacity = 0;
+
+    $(document).ready(function() {
+      document.body.style.opacity = 1;
+    });
+    </script>
+    
     <noscript>
       <link rel="stylesheet" href="css/skel.css" />
       <link rel="stylesheet" href="css/style.css" />
       <link rel="stylesheet" href="css/style-xlarge.css" />
     </noscript>
   </head>
-  <body class="landing">
-
+  <body class="landing" style="opacity: 0; transition: opacity ease 0.3s;">
+    
     <!-- Header -->
       <header id="header">
         <h1><a href="index.html">Max Tyrrell</a></h1>
@@ -98,7 +108,7 @@
               <section class="6u 6u$(medium) 12u$(xsmall) profile">
                 <img src="images/next-train-to.png" alt="" />
                 <h4>Next Train To</h4>
-                <p>A web-app to find the next train to wherever you need to go in Cape Town. Takes Metrorail's train's delays and cancellations into account.</p>
+                <p>A web-app to find the next train to wherever you need to go in Cape Town, which takes Metrorail's train's delays and cancellations into account.</p>
               </section>
               <section class="6u 6u(medium) 12u$(xsmall) profile">
                 <img src="images/help-eduprogramme.png" alt="" />
