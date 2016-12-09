@@ -159,8 +159,19 @@
 		text-align: right;
 	}
 /* Loader spinner */
-#wrap {position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden;}
-#wrap canvas {position: absolute; left: 50%; top: 50%; width: 500px; height: 500px; margin: -250px 0 0 -250px; -outline: 1px solid #fff;}
+#wrap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+#wrap canvas {
+	position: absolute; left: 50%; top: 50%; width: 500px; height: 500px; margin: -250px 0 0 -250px; -outline: 1px solid #fff;
+}
 
 /* Section/Article */
 
