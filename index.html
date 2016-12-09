@@ -30,9 +30,10 @@
     document.body.style.opacity = 0;
     
     $(document).ready(function() {
-      document.body.style.opacity = 1;
-      console.log("Setting body opacity to 1");
-
+      setTimeout(function () {
+        document.body.style.opacity = 1;
+        console.log("Setting body opacity to 1");
+        }
     }, 400);
     });
     </script>
