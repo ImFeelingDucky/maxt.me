@@ -1,0 +1,37 @@
+html, body {
+	font-family: "Source Code Pro", monospace;
+	background-color: #FFF;
+	overflow: hidden;
+	height: 100%;
+	font-size: 16px;
+}
+
+.background {
+	min-width: 30em;
+	min-height: 30em;
+}
+
+.shape {
+	position: absolute;
+	z-index: 100;
+	min-width: 25em;
+	min-height: 20em;
+	margin: auto;
+	background-color: #fc3a83;
+	top: calc(50vh - 20em/2);
+	left: calc(50vw - 25em/2);
+}
+
+.background p {
+	padding: 0;
+	margin: 0;
+	color: #CCC;
+	line-height: 1em;
+	cursor: default;
+}
+
+#css-ems-hack {
+	display: none;
+	width: calc(100vw / 1em);
+	height: calc(100vh / 1em);
+}

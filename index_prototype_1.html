@@ -3,27 +3,34 @@
 <html lang="en-ZA">
 <head>
 	<title>Max Tyrrell</title>
-	<link rel="stylesheet" type="text/css" href="index-style.css">
+	<link rel="stylesheet" type="text/css" href="index-style_prototype_1.css">
 </head>
-<span id="css-ems-hack"></span>
+<div class="outer-border">
 <div class="background">
 	<main class="shape">
-		<div></div>
+		<div>MAX TYRRELL</div>
+		<div>TECH CREATOR</div>
+		<div>CONTACT: <a href="mailto:max@keroseneweb.com">max@keroseneweb.com</a></div>
+		<div class="motto"><em>living in the future</em></div>
 	</main>
+</div>
 </div>
 
 <script type="text/javascript">
 	document.body.onload = renderPage;
 
 	function renderPage() {
+		clearInterval(renderPage);
 		var cssEmsHack = document.getElementById("css-ems-hack");
-		var widthUnits = cssEmsHack.style.width; // css.calc(100vw / 1em);
-		var heightUnits = cssEmsHack.style.height; // css.calc(100vh / 1em);
+		var widthUnits = 100; // css.calc(100vw / 1em);
+		var heightUnits = 100; // css.calc(100vh / 1em);
 
 		var w = Math.min(window.innerWidth / 13);
 		var h = Math.min(window.innerHeight / 13);
 
 		var background = document.querySelector(".background");
+
+		background.innerHTML = "";
 
 		function repeatBinaryFor(x, background) {
 			for (var i = 0; i < x; i++) {
@@ -44,6 +51,8 @@
 
 			repeatBinaryFor(30, p);
 		}
+
+	setInterval(renderPage, 3000);
 	}
 
 </script>
